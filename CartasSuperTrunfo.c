@@ -6,24 +6,43 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+    int main (){
     
-    char estado;
-    char codigodacarta [3];
-    char nome[50];
-    int população;
-    float área;
-    float pib;
-    int pontosturisticos;
+        struct CartasSuperTrunfo{
+            char estado;
+            char codigo_da_carta[3];
+            char nome[50];
+            int população;
+            float área;
+            float pib;
+            int pontos_turisticos;
+        };
+    
 
      // Cadastro da carta1
-     printf("Cadastrando a primeira carta:\n");
+    printf("Cadastrando a primeira carta:\n");
 
     printf("Defina o estado da cidade: \n");
     scanf("%s", &estado);
 
     printf("Dê um código para a carta: \n");
-    scanf("%s", &codigodacarta);
+    scanf("%s", &codigo_da_carta);
+
+    printf("Escreva o nome da cidade da carta: \n");
+    scanf("%s", &nome);
+
+    printf("Coloque o número da população da cidade: \n");
+    scanf("%d", &população);
+
+    printf("Apresente a área da cidade:");
+    scanf("%f", &área);
+
+    printf("Apresente o PIB da cidade:");
+    scanf("%f", &pib);
+
+    printf("Numero de pontos turísticos tem a cidade:");
+    scanf("%d"; &pontos_turisticos);
+
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
